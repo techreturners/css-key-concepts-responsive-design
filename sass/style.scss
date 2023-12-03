@@ -6,9 +6,6 @@
     --camel: #D8A47F;
 }
 
-@mixin respond-x-small {
-    @media (max-width: 600px) { @content };
-  }
 
   @mixin respond-small {
     @media (min-width: 600px) { @content };

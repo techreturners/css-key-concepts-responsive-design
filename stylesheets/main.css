@@ -41,7 +41,7 @@
 }
 @media (min-width: 600px) {
   .card {
-    flex-basis: 100%;
+    flex-basis: 50%;
   }
 }
 @media (min-width: 768px) {
@@ -51,12 +51,12 @@
 }
 @media (min-width: 992px) {
   .card {
-    flex-basis: 33%;
+    flex-basis: 28%;
   }
 }
 @media (min-width: 1200px) {
   .card {
-    flex-basis: 25%;
+    flex-basis: 17%;
   }
 }
 .card__image {

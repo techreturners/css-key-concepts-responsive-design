@@ -7,8 +7,8 @@
     position: sticky;
     @include teal-shadow;
 
-    @include respond-small{
-        flex-basis: 100%;
+    @include respond-small {
+        flex-basis: 50%;
     }
 
     @include respond-medium {
@@ -16,11 +16,11 @@
     }
 
     @include respond-large{
-        flex-basis: 33%;
+        flex-basis: 28%;
     }
 
     @include respond-x-large{
-        flex-basis: 25%;
+        flex-basis: 17%;
     }
 
     &__image {
