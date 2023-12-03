@@ -115,11 +115,11 @@ const cats= [
 ];
 
 (function () {
-    const petNames = document.getElementsByClassName("cat-name") 
+    const petNames = document.getElementsByClassName("card__cat-name") 
     const petImage = document.getElementsByClassName("card__image") 
-    const favFoods = document.getElementsByClassName("fav-foods")
-    const birthYear = document.getElementsByClassName("birth-year")
-    const species = document.getElementsByClassName("species")
+    const favFoods = document.getElementsByClassName("card__fav-foods")
+    const birthYear = document.getElementsByClassName("card__birth-year")
+    const species = document.getElementsByClassName("card__species")
 
     for (let i = 0; i < cats.length; i++) {
         petNames[i].innerText = cats[i].name;

@@ -29,6 +29,19 @@
        padding: 1%;
        max-height: 100%;
     }
+
+    &__cat-name {   
+        @extend %card-heading;
+    }
+    &__species {   
+        @extend %card-text;
+    }
+    &__fav-foods {   
+        @extend %card-text;
+    }
+    &__birth-year {   
+        @extend %card-text;
+    }
 }
 
 

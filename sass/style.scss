@@ -28,3 +28,15 @@
     box-shadow: 5px 5px 8px var(--dark), 10px 10px 8px var(--teal), 15px 15px 8px var(--coral);
     border-radius: 5%;
   }
+
+  %card-heading {
+    margin: 1%;
+    padding: 1%;
+    font-size: 1.5rem;
+  }
+
+  %card-text {
+    margin: 1%;
+    padding: 1%;
+    font-size: 1rem;
+  }

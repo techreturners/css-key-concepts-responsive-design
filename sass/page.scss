@@ -7,6 +7,18 @@
         padding: 2%;
         font-size: 2.25rem;
     }
+    &__sub-heading {
+        border: 1px solid var(--coral);    
+        margin: 2%;
+        padding: 2%;
+        font-size: 1.75rem;
+    }
+    &__paragraph {
+        border: 1px solid var(--coral);    
+        margin: 2%;
+        padding: 2%;
+        font-size: 1rem;
+    }
     &__container {
         border: 1px solid var(--coral);
         display: flex;

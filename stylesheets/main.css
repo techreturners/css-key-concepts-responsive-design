@@ -6,6 +6,18 @@
   --camel: #D8A47F;
 }
 
+.card__cat-name {
+  margin: 1%;
+  padding: 1%;
+  font-size: 1.5rem;
+}
+
+.card__birth-year, .card__fav-foods, .card__species {
+  margin: 1%;
+  padding: 1%;
+  font-size: 1rem;
+}
+
 .page {
   background-color: var(--light);
   box-sizing: border-box;
@@ -15,6 +27,18 @@
   margin: 2%;
   padding: 2%;
   font-size: 2.25rem;
+}
+.page__sub-heading {
+  border: 1px solid var(--coral);
+  margin: 2%;
+  padding: 2%;
+  font-size: 1.75rem;
+}
+.page__paragraph {
+  border: 1px solid var(--coral);
+  margin: 2%;
+  padding: 2%;
+  font-size: 1rem;
 }
 .page__container {
   border: 1px solid var(--coral);
