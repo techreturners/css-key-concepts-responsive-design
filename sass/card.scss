@@ -3,10 +3,17 @@
     margin: 2%;
     flex-grow: 1;
     border: solid 1px var(coral);
-    flex-basis: 20%;
-    width: 20%;
+    flex-basis: 90%;
     position: sticky;
     @include teal-shadow;
+
+    @include respond-medium {
+        flex-basis: 35%;
+    }
+
+    @include respond-large{
+        flex-basis: 25%;
+    }
 
     &__image {
        max-width: 98%;

@@ -1,0 +1,21 @@
+.page {
+    background-color: var(--light);
+    box-sizing: border-box;
+    &__intro {
+        border: 1px solid var(--coral);    
+        margin: 2%;
+        padding: 2%;
+    }
+    &__card-container {
+        border: 1px solid var(--coral);
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2%;
+        padding: 2%;
+        display: flex;
+        flex-flow: wrap;
+        align-items: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

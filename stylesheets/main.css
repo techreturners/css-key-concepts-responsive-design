@@ -8,6 +8,7 @@
 
 .page {
   background-color: var(--light);
+  box-sizing: border-box;
 }
 .page__intro {
   border: 1px solid var(--coral);
@@ -32,12 +33,21 @@
   margin: 2%;
   flex-grow: 1;
   border: solid 1px var(coral);
-  flex-basis: 20%;
-  width: 20%;
+  flex-basis: 90%;
   position: sticky;
-  border: 1px solid var(--gold);
+  border: 1px solid var(--coral);
   box-shadow: 5px 5px 8px var(--dark), 10px 10px 8px var(--teal), 15px 15px 8px var(--coral);
   border-radius: 5%;
+}
+@media (min-width: 768px) {
+  .card {
+    flex-basis: 35%;
+  }
+}
+@media (min-width: 992px) {
+  .card {
+    flex-basis: 25%;
+  }
 }
 .card__image {
   max-width: 98%;
