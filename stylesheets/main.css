@@ -1,0 +1,49 @@
+:root {
+  --coral: #F05D5E;
+  --teal: #0F7173;
+  --light: #E7ECEF;
+  --dark: #272932;
+  --camel: #D8A47F;
+}
+
+.page {
+  background-color: var(--light);
+}
+.page__intro {
+  border: 1px solid var(--coral);
+  margin: 2%;
+  padding: 2%;
+}
+.page__card-container {
+  border: 1px solid var(--coral);
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2%;
+  padding: 2%;
+  display: flex;
+  flex-flow: wrap;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 2%;
+  margin: 2%;
+  flex-grow: 1;
+  border: solid 1px var(coral);
+  flex-basis: 20%;
+  width: 20%;
+  position: sticky;
+  border: 1px solid var(--gold);
+  box-shadow: 5px 5px 8px var(--dark), 10px 10px 8px var(--teal), 15px 15px 8px var(--coral);
+  border-radius: 5%;
+}
+.card__image {
+  max-width: 98%;
+  margin: 1%;
+  padding: 1%;
+  max-height: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

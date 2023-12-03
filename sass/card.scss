@@ -1,0 +1,19 @@
+.card {
+    padding: 2%;
+    margin: 2%;
+    flex-grow: 1;
+    border: solid 1px var(coral);
+    flex-basis: 20%;
+    width: 20%;
+    position: sticky;
+    @include teal-shadow;
+
+    &__image {
+       max-width: 98%;
+       margin: 1%;
+       padding: 1%;
+       max-height: 100%;
+    }
+}
+
+

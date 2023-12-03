@@ -116,7 +116,7 @@ const cats= [
 
 (function () {
     const petNames = document.getElementsByClassName("cat-name") 
-    const petImage = document.getElementsByClassName("pet-pic") 
+    const petImage = document.getElementsByClassName("card__image") 
     const favFoods = document.getElementsByClassName("fav-foods")
     const birthYear = document.getElementsByClassName("birth-year")
     const species = document.getElementsByClassName("species")

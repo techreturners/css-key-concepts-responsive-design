@@ -1,0 +1,42 @@
+:root {
+    --coral: #F05D5E;
+    --teal: #0F7173;
+    --light: #E7ECEF;
+    --dark: #272932;
+    --camel: #D8A47F;
+}
+
+@mixin respond-medium {
+    @media (min-width: 768px) { @content };
+  }
+
+  @mixin respond-large {
+    @media (min-width: 992px) { @content };
+  }
+
+  @mixin teal-shadow {
+    border: 1px solid var(--gold);
+    box-shadow: 5px 5px 8px var(--dark), 10px 10px 8px var(--teal), 15px 15px 8px var(--coral);
+    border-radius: 5%;
+  }
+
+.page {
+    background-color: var(--light);
+    &__intro {
+        border: 1px solid var(--coral);    
+        margin: 2%;
+        padding: 2%;
+    }
+    &__card-container {
+        border: 1px solid var(--coral);
+        display: flex;
+        justify-content: space-evenly;
+        margin: 2%;
+        padding: 2%;
+        display: flex;
+        flex-flow: wrap;
+        align-items: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
