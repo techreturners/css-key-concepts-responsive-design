@@ -1,12 +1,13 @@
 .page {
     background-color: var(--light);
     box-sizing: border-box;
-    &__intro {
+    &__heading {
         border: 1px solid var(--coral);    
         margin: 2%;
         padding: 2%;
+        font-size: 2.25rem;
     }
-    &__card-container {
+    &__container {
         border: 1px solid var(--coral);
         display: flex;
         justify-content: space-evenly;

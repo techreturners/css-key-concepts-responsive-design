@@ -10,12 +10,13 @@
   background-color: var(--light);
   box-sizing: border-box;
 }
-.page__intro {
+.page__heading {
   border: 1px solid var(--coral);
   margin: 2%;
   padding: 2%;
+  font-size: 2.25rem;
 }
-.page__card-container {
+.page__container {
   border: 1px solid var(--coral);
   display: flex;
   justify-content: space-evenly;
