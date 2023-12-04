@@ -4,6 +4,18 @@
   --light: #E7ECEF;
   --dark: #272932;
   --camel: #D8A47F;
+  -red: #FE2712;
+  --red-orange: #FC600A;
+  --orange: #FB9902;
+  --yellow-orange: #FCCC1A;
+  --yellow: #FEFE33;
+  --yellow-green: #B2D732;
+  --green: #66B032;
+  --green-blue: #347C98;
+  --blue: #0247FE;
+  --blue-purple:#4424D6;
+  --purple: #8601AF;
+  --red-purple: #C21460;
 }
 
 .card__cat-name {
@@ -55,14 +67,10 @@
 
 .card {
   padding: 2%;
-  margin: 2%;
+  margin: 0;
   flex-grow: 1;
-  border: solid 1px var(coral);
   flex-basis: 100%;
   position: sticky;
-  border: 1px solid var(--coral);
-  box-shadow: 5px 5px 8px var(--dark), 10px 10px 8px var(--teal), 15px 15px 8px var(--coral);
-  border-radius: 5%;
 }
 @media (min-width: 600px) {
   .card {
@@ -71,17 +79,17 @@
 }
 @media (min-width: 768px) {
   .card {
-    flex-basis: 40%;
+    flex-basis: 33.3333333333%;
   }
 }
 @media (min-width: 992px) {
   .card {
-    flex-basis: 28%;
+    flex-basis: 25%;
   }
 }
 @media (min-width: 1200px) {
   .card {
-    flex-basis: 17%;
+    flex-basis: 20%;
   }
 }
 .card__image {
