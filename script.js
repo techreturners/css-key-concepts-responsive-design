@@ -115,13 +115,19 @@ const cats= [
 ];
 
 (function () {
+    const card = document.getElementsByClassName("card")
     const petNames = document.getElementsByClassName("card__cat-name") 
     const petImage = document.getElementsByClassName("card__image") 
     const favFoods = document.getElementsByClassName("card__fav-foods")
     const birthYear = document.getElementsByClassName("card__birth-year")
     const species = document.getElementsByClassName("card__species")
+    const colourWheel = ["red", "red-orange", "orange", "yellow-orange",
+    "yellow", "yellow-green", "green", "green-blue", 
+    "blue", "blue-purple", "purple", "red-purple"];
 
     for (let i = 0; i < cats.length; i++) {
+        const colIndex = i%colourWheel.length;
+        card[i].classList.add(`card--${colourWheel[colIndex]}`);
         petNames[i].innerText = cats[i].name;
         petImage[i].src = cats[i].photo;
         favFoods[i].innerText = `Favourite foods: ${(cats[i].favFoods.map(food => food)).join(', ')}`

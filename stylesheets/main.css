@@ -4,18 +4,54 @@
   --light: #E7ECEF;
   --dark: #272932;
   --camel: #D8A47F;
-  -red: #FE2712;
-  --red-orange: #FC600A;
-  --orange: #FB9902;
-  --yellow-orange: #FCCC1A;
-  --yellow: #FEFE33;
-  --yellow-green: #B2D732;
-  --green: #66B032;
-  --green-blue: #347C98;
-  --blue: #0247FE;
-  --blue-purple:#4424D6;
-  --purple: #8601AF;
-  --red-purple: #C21460;
+}
+
+.card--red {
+  background: #FE2712;
+}
+
+.card--red-orange {
+  background: #FC600A;
+}
+
+.card--orange {
+  background: #FB9902;
+}
+
+.card--yellow-orange {
+  background: #FCCC1A;
+}
+
+.card--yellow {
+  background: #FEFE33;
+}
+
+.card--yellow-green {
+  background: #B2D732;
+}
+
+.card--green {
+  background: #66B032;
+}
+
+.card--green-blue {
+  background: #347C98;
+}
+
+.card--blue {
+  background: #0247FE;
+}
+
+.card--blue-purple {
+  background: #4424D6;
+}
+
+.card--purple {
+  background: #8601AF;
+}
+
+.card--red-purple {
+  background: #C21460;
 }
 
 .card__cat-name {
