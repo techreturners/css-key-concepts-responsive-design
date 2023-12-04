@@ -20,11 +20,10 @@
         font-size: 1rem;
     }
     &__container {
-        border: 1px solid var(--coral);
         display: flex;
         justify-content: space-evenly;
-        margin: 2%;
-        padding: 2%;
+        margin: 0;
+        padding: 0;
         display: flex;
         flex-flow: wrap;
         align-items: stretch;
