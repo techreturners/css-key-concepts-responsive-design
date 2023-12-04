@@ -128,6 +128,8 @@ const cats= [
     for (let i = 0; i < cats.length; i++) {
         const colIndex = i%colourWheel.length;
         card[i].classList.add(`card--${colourWheel[colIndex]}`);
+        card[i].classList.add("card--mode");
+        card[i].classList.add("card--color");
         petNames[i].innerText = cats[i].name;
         petImage[i].src = cats[i].photo;
         favFoods[i].innerText = `Favourite foods: ${(cats[i].favFoods.map(food => food)).join(', ')}`

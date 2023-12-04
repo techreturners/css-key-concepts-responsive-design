@@ -6,6 +6,18 @@
     --camel: #D8A47F;
 }
 
+/* Font: BenchNine[Font].
+"https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&display=swap";
+Accessed 23/10/23 */
+@font-face {
+  font-family: "BenchNine-Bold";
+  src: url("../fonts/BenchNine-Bold.ttf");
+}
+@font-face {
+  font-family: "BenchNine-Regular";
+  src: url("../fonts/BenchNine-Regular.ttf");
+}
+
     $colour-wheel: (
     "red" :#FE2712,
     "red-orange": #FC600A,
@@ -25,8 +37,7 @@
       .card--#{$name} {
         background: $hex;
     }
-  }
-    
+  }   
 
   @mixin respond-small {
     @media (min-width: 600px) { @content };
@@ -46,18 +57,24 @@
 
   @mixin teal-shadow {
     border: 1px solid var(--coral);
-    box-shadow: 5px 5px 8px var(--dark), 10px 10px 8px var(--teal), 15px 15px 8px var(--coral);
+    box-shadow: 3px 3px 5px var(--dark), 7px 7px 5px var(--teal), 11px 11px 5px var(--coral);
     border-radius: 5%;
   }
 
   %card-heading {
     margin: 1%;
     padding: 1%;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    font-family: "BenchNine-Bold";
+    text-align: center;
+    text-wrap:wrap;
   }
 
   %card-text {
     margin: 1%;
     padding: 1%;
-    font-size: 1rem;
+    font-size: 1.6rem;
+    font-family: "BenchNine-Regular";
+    text-align: center;
+    text-wrap:wrap;
   }

@@ -5,6 +5,12 @@
     flex-basis: 100%;
     position: sticky;
 
+    &--color:nth-child(1),
+    &--color:nth-child(8), &--color:nth-child(9), &--color:nth-child(10),
+    &--color:nth-child(11),&--color:nth-child(12),&--color:nth-child(13) {
+        color: var(--light);
+    }
+
     @include respond-small {
         flex-basis: calc(100 / 2 ) * 1%;
     }
@@ -22,10 +28,11 @@
     }
 
     &__image {
-       max-width: 98%;
-       margin: 1%;
-       padding: 1%;
+       width: 90%;
+       margin: 3% 5%;
+       padding: 0;
        max-height: 100%;
+    @include teal-shadow;
     }
 
     &__cat-name {   
