@@ -43,7 +43,7 @@ Accessed 23/10/23 */
     @media (min-width: 600px) { @content };
   }
 
-@mixin respond-medium {
+  @mixin respond-medium {
     @media (min-width: 768px) { @content };
   }
 
@@ -61,20 +61,20 @@ Accessed 23/10/23 */
     border-radius: 5%;
   }
 
-  %card-heading {
+  %card-info {
     margin: 1%;
     padding: 1%;
-    font-size: 2.5rem;
     font-family: "BenchNine-Bold";
     text-align: center;
     text-wrap:wrap;
   }
 
+  %card-heading {
+    @extend %card-info;
+    font-size: 2.5rem;
+  }
+
   %card-text {
-    margin: 1%;
-    padding: 1%;
+    @extend %card-info;
     font-size: 1.6rem;
-    font-family: "BenchNine-Regular";
-    text-align: center;
-    text-wrap:wrap;
   }

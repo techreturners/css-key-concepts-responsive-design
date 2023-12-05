@@ -65,22 +65,20 @@ Accessed 23/10/23 */
   background: #C21460;
 }
 
-.card__cat-name {
+.card__temperament, .card__origin, .card__species, .card__cat-name {
   margin: 1%;
   padding: 1%;
-  font-size: 2.5rem;
   font-family: "BenchNine-Bold";
   text-align: center;
   text-wrap: wrap;
 }
 
-.card__birth-year, .card__fav-foods, .card__species {
-  margin: 1%;
-  padding: 1%;
+.card__cat-name {
+  font-size: 2.5rem;
+}
+
+.card__temperament, .card__origin, .card__species {
   font-size: 1.6rem;
-  font-family: "BenchNine-Regular";
-  text-align: center;
-  text-wrap: wrap;
 }
 
 .page {
