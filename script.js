@@ -139,6 +139,7 @@ showCats(catApi);
         card[i].classList.add(`card--${colourWheel[colIndex]}`);
         card[i].classList.add("card--mode");
         card[i].classList.add("card--color");
+        card[i].id = cats[i].name.toLowerCase()
         petNames[i].innerText = cats[i].name;
     }
 })();

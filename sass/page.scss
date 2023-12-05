@@ -1,6 +1,11 @@
 .page {
     background-color: var(--light);
     box-sizing: border-box;
+
+    @include on-dark-mode {
+        background-color: var(--dark);
+      }
+
     &__heading {   
         margin: 0 2%;
         padding: 0;
@@ -8,10 +13,14 @@
         text-align: center;
         
         &--style {
-            color: var(--teal);
+            color: var(--green-blue);
             font-family: "BenchNine-Bold";
+            @include on-dark-mode {
+                color: var(--orange);
+            }
         }
     }
+
     &__sub-heading { 
         margin: 1% 2% 4%;
         padding: 0;
@@ -19,8 +28,11 @@
         text-align: center;
 
         &--style {
-            color: var(--coral);
+            color: var(--red-purple);
             font-family: "BenchNine-Regular";
+            @include on-dark-mode {
+                color: var(--orange);
+            }
         }
 
         @include respond-small {
@@ -28,8 +40,9 @@
             margin: 1% 2% 1%;
         }
     }
+
     &__text {
-        border: 1px solid var(--coral);    
+        border: 1px solid var(--orange);    
         margin: 2% 0 0 0;
         padding: 2%;
         font-size: 2rem;
@@ -37,7 +50,7 @@
 
         &--style {
             color: var(--light);
-            background-color: var(--teal);
+            background-color: var(--green-blue);
             font-family: "BenchNine-Regular";
         }
 

@@ -4,6 +4,10 @@
     --light: #E7ECEF;
     --dark: #272932;
     --camel: #D8A47F;
+    --red-purple: #C21460;
+    --green-blue: #347C98;
+    --orange: #FB9902;
+    --yellow-orange: #FCCC1A;
 }
 
 /* Font: BenchNine[Font].
@@ -37,7 +41,18 @@ Accessed 23/10/23 */
       .card--#{$name} {
         background: $hex;
     }
-  }   
+  }
+
+  @mixin on-dark-mode {
+    @media (prefers-color-scheme: dark) {
+      html[data-theme="auto"] & {
+        @content;
+      }
+    }
+    html[data-theme="dark"] & {
+      @content;
+    }
+  }
 
   @mixin respond-small {
     @media (min-width: 600px) { @content };

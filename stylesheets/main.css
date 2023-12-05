@@ -4,6 +4,10 @@
   --light: #E7ECEF;
   --dark: #272932;
   --camel: #D8A47F;
+  --red-purple: #C21460;
+  --green-blue: #347C98;
+  --orange: #FB9902;
+  --yellow-orange: #FCCC1A;
 }
 
 /* Font: BenchNine[Font].
@@ -81,9 +85,134 @@ Accessed 23/10/23 */
   font-size: 1.6rem;
 }
 
+.navbar {
+  position: sticky;
+  align-items: left;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  z-index: 1000;
+  max-height: fit-content;
+}
+@media (min-width: 768px) {
+  .navbar {
+    flex-wrap: unset;
+    width: 100%;
+    display: flex;
+  }
+}
+.navbar--coral {
+  background-color: var(--green-blue);
+}
+@media (prefers-color-scheme: dark) {
+  html[data-theme=auto] .navbar--coral {
+    color: var(--orange);
+  }
+}
+html[data-theme=dark] .navbar--coral {
+  color: var(--orange);
+}
+.navbar__list {
+  list-style: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0;
+  display: none;
+  width: 100%;
+  margin: 0;
+  line-height: 3rem;
+}
+@media (min-width: 768px) {
+  .navbar__list {
+    flex-direction: row;
+    position: relative;
+    justify-content: space-evenly;
+    display: flex;
+  }
+}
+.navbar__list--coral {
+  font-family: "BenchNine-Bold";
+  background-color: var(--green-blue);
+}
+@media (prefers-color-scheme: dark) {
+  html[data-theme=auto] .navbar__list--coral {
+    color: var(--orange);
+  }
+}
+html[data-theme=dark] .navbar__list--coral {
+  color: var(--orange);
+}
+.navbar__item {
+  margin: 0 2%;
+  padding: 0;
+}
+.navbar__anchor {
+  text-decoration: none;
+  font-size: 2.4rem;
+  word-break: keep-all;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .navbar__anchor {
+    font-size: 2rem;
+  }
+}
+.navbar__anchor--coral {
+  color: var(--light);
+}
+.navbar__anchor--coral:hover {
+  color: var(--orange);
+}
+.navbar__element {
+  margin: 0 2% 0 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+  float: right;
+  font-size: 3rem;
+  cursor: pointer;
+  line-height: 3.6rem;
+}
+@media (min-width: 768px) {
+  .navbar__element {
+    width: 100%;
+  }
+}
+.navbar__element--burger {
+  color: var(--green-blue);
+}
+@media (prefers-color-scheme: dark) {
+  html[data-theme=auto] .navbar__element--burger {
+    color: var(--orange);
+  }
+}
+html[data-theme=dark] .navbar__element--burger {
+  color: var(--orange);
+}
+@media (min-width: 768px) {
+  .navbar__element--burger {
+    display: none;
+  }
+}
+.navbar__element:hover .navbar__list {
+  display: flex;
+}
+
 .page {
   background-color: var(--light);
   box-sizing: border-box;
+}
+@media (prefers-color-scheme: dark) {
+  html[data-theme=auto] .page {
+    background-color: var(--dark);
+  }
+}
+html[data-theme=dark] .page {
+  background-color: var(--dark);
 }
 .page__heading {
   margin: 0 2%;
@@ -92,8 +221,16 @@ Accessed 23/10/23 */
   text-align: center;
 }
 .page__heading--style {
-  color: var(--teal);
+  color: var(--green-blue);
   font-family: "BenchNine-Bold";
+}
+@media (prefers-color-scheme: dark) {
+  html[data-theme=auto] .page__heading--style {
+    color: var(--orange);
+  }
+}
+html[data-theme=dark] .page__heading--style {
+  color: var(--orange);
 }
 .page__sub-heading {
   margin: 1% 2% 4%;
@@ -102,8 +239,16 @@ Accessed 23/10/23 */
   text-align: center;
 }
 .page__sub-heading--style {
-  color: var(--coral);
+  color: var(--red-purple);
   font-family: "BenchNine-Regular";
+}
+@media (prefers-color-scheme: dark) {
+  html[data-theme=auto] .page__sub-heading--style {
+    color: var(--orange);
+  }
+}
+html[data-theme=dark] .page__sub-heading--style {
+  color: var(--orange);
 }
 @media (min-width: 600px) {
   .page__sub-heading {
@@ -112,7 +257,7 @@ Accessed 23/10/23 */
   }
 }
 .page__text {
-  border: 1px solid var(--coral);
+  border: 1px solid var(--orange);
   margin: 2% 0 0 0;
   padding: 2%;
   font-size: 2rem;
@@ -120,7 +265,7 @@ Accessed 23/10/23 */
 }
 .page__text--style {
   color: var(--light);
-  background-color: var(--teal);
+  background-color: var(--green-blue);
   font-family: "BenchNine-Regular";
 }
 @media (min-width: 600px) {
