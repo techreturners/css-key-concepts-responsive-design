@@ -296,7 +296,6 @@ html[data-theme=dark] .page__sub-heading--style {
   color: var(--yellow-green);
 }
 .page__text {
-  border: 1px solid var(--orange);
   margin: 0;
   padding: 2%;
   font-size: 2rem;
