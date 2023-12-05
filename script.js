@@ -119,6 +119,7 @@ const showCats = async (catApi) => {
         const {url, breeds} = myCats[i];
         petImage[i].src = url;  
         const {name, temperament, origin} = breeds[0];
+        petImage[i].alt = `Photo of ${name} breed of cat`;
         species[i].innerText = `Species: ${name}`;
         country[i].innerText = `Origin: ${origin}`;
         persona[i].innerText = `Temperament: ${temperament}`;
@@ -139,7 +140,7 @@ showCats(catApi);
         card[i].classList.add(`card--${colourWheel[colIndex]}`);
         card[i].classList.add("card--mode");
         card[i].classList.add("card--color");
-        card[i].id = cats[i].name.toLowerCase()
+        card[i].id = cats[i].name.toLowerCase();
         petNames[i].innerText = cats[i].name;
     }
 })();
