@@ -14,8 +14,8 @@
         display: flex;
     }
 
-    &--coral {
-      background-color: var(--green-blue);
+    &--style {
+      background-color: var(--yellow-orange);
       @include on-dark-mode {
         color: var(--orange);
       }
@@ -41,9 +41,9 @@
         display: flex;
       }
 
-      &--coral {
+      &--style {
         font-family: "BenchNine-Bold";
-        background-color: var(--green-blue);
+        background-color: var(--yellow-orange);
         @include on-dark-mode {
           color: var(--orange);
         }
@@ -62,15 +62,15 @@
       cursor: pointer;
 
       @include respond-medium { 
-        font-size: 2rem;
+        font-size: 2.4rem;
       }
 
-      &--coral {
-        color: var(--light);
+      &--style {
+        color: var(--red-purple);
       }
 
-      &--coral:hover {
-        color: var(--orange);
+      &--style:hover {
+        color: var(--purple);
       }
       
     }

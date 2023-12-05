@@ -7,13 +7,17 @@
       }
 
     &__heading {   
-        margin: 0 2%;
+        margin: 1% 2%;
         padding: 0;
         font-size: 8rem;
-        text-align: center;
+        text-align: left;
+
+        @include respond-medium {
+            text-align: center;
+        }
         
         &--style {
-            color: var(--green-blue);
+            color: var(--purple);
             font-family: "BenchNine-Bold";
             @include on-dark-mode {
                 color: var(--orange);
@@ -25,19 +29,22 @@
         margin: 1% 2% 4%;
         padding: 0;
         font-size: 5rem;
-        text-align: center;
+        text-align: left;
+
+        @include respond-medium {
+            text-align: center;
+        }
+
+        @include respond-small {
+            margin: 1% 2% 1%;
+        }
 
         &--style {
             color: var(--red-purple);
             font-family: "BenchNine-Regular";
             @include on-dark-mode {
-                color: var(--orange);
+                color: var(--yellow-orange);
             }
-        }
-
-        @include respond-small {
-            display: block;
-            margin: 1% 2% 1%;
         }
     }
 

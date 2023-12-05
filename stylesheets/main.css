@@ -1,11 +1,10 @@
 :root {
-  --coral: #F05D5E;
-  --teal: #0F7173;
   --light: #E7ECEF;
   --dark: #272932;
-  --camel: #D8A47F;
+  --purple: #8601AF;
   --red-purple: #C21460;
   --green-blue: #347C98;
+  --red-orange: #FC600A;
   --orange: #FB9902;
   --yellow-orange: #FCCC1A;
 }
@@ -102,15 +101,15 @@ Accessed 23/10/23 */
     display: flex;
   }
 }
-.navbar--coral {
-  background-color: var(--green-blue);
+.navbar--style {
+  background-color: var(--yellow-orange);
 }
 @media (prefers-color-scheme: dark) {
-  html[data-theme=auto] .navbar--coral {
+  html[data-theme=auto] .navbar--style {
     color: var(--orange);
   }
 }
-html[data-theme=dark] .navbar--coral {
+html[data-theme=dark] .navbar--style {
   color: var(--orange);
 }
 .navbar__list {
@@ -134,16 +133,16 @@ html[data-theme=dark] .navbar--coral {
     display: flex;
   }
 }
-.navbar__list--coral {
+.navbar__list--style {
   font-family: "BenchNine-Bold";
-  background-color: var(--green-blue);
+  background-color: var(--yellow-orange);
 }
 @media (prefers-color-scheme: dark) {
-  html[data-theme=auto] .navbar__list--coral {
+  html[data-theme=auto] .navbar__list--style {
     color: var(--orange);
   }
 }
-html[data-theme=dark] .navbar__list--coral {
+html[data-theme=dark] .navbar__list--style {
   color: var(--orange);
 }
 .navbar__item {
@@ -158,14 +157,14 @@ html[data-theme=dark] .navbar__list--coral {
 }
 @media (min-width: 768px) {
   .navbar__anchor {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 }
-.navbar__anchor--coral {
-  color: var(--light);
+.navbar__anchor--style {
+  color: var(--red-purple);
 }
-.navbar__anchor--coral:hover {
-  color: var(--orange);
+.navbar__anchor--style:hover {
+  color: var(--purple);
 }
 .navbar__element {
   margin: 0 2% 0 0;
@@ -215,13 +214,18 @@ html[data-theme=dark] .page {
   background-color: var(--dark);
 }
 .page__heading {
-  margin: 0 2%;
+  margin: 1% 2%;
   padding: 0;
   font-size: 8rem;
-  text-align: center;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .page__heading {
+    text-align: center;
+  }
 }
 .page__heading--style {
-  color: var(--green-blue);
+  color: var(--purple);
   font-family: "BenchNine-Bold";
 }
 @media (prefers-color-scheme: dark) {
@@ -236,7 +240,17 @@ html[data-theme=dark] .page__heading--style {
   margin: 1% 2% 4%;
   padding: 0;
   font-size: 5rem;
-  text-align: center;
+  text-align: left;
+}
+@media (min-width: 768px) {
+  .page__sub-heading {
+    text-align: center;
+  }
+}
+@media (min-width: 600px) {
+  .page__sub-heading {
+    margin: 1% 2% 1%;
+  }
 }
 .page__sub-heading--style {
   color: var(--red-purple);
@@ -244,17 +258,11 @@ html[data-theme=dark] .page__heading--style {
 }
 @media (prefers-color-scheme: dark) {
   html[data-theme=auto] .page__sub-heading--style {
-    color: var(--orange);
+    color: var(--yellow-orange);
   }
 }
 html[data-theme=dark] .page__sub-heading--style {
-  color: var(--orange);
-}
-@media (min-width: 600px) {
-  .page__sub-heading {
-    display: block;
-    margin: 1% 2% 1%;
-  }
+  color: var(--yellow-orange);
 }
 .page__text {
   border: 1px solid var(--orange);
