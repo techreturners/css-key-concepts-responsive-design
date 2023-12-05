@@ -1,0 +1,98 @@
+.page {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    &__intro {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+        flex-flow: wrap;
+        align-items: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &__heading {   
+        margin: 0;
+        padding: 2%;
+        font-size: 8rem;
+        text-align: left;
+        flex-basis: 100%;
+        box-sizing: border-box;
+
+        @include respond-medium {
+            text-align: center;
+            flex-basis: 70%;
+        }
+        
+        &--style {
+            background-color: var(--yellow);
+            color: var(--red-purple);
+            font-family: "BenchNine-Bold";
+            @include on-dark-mode {
+                background-color: var(--red-purple);
+                color: var(--yellow-green);
+            }
+        }
+    }
+
+    &__sub-heading { 
+        margin: 0;
+        padding: 3%;
+        font-size: 4rem;
+        text-align: left;
+        flex-basis: 100%;
+        box-sizing: border-box;
+
+        @include respond-medium {
+            text-align: center;
+            flex-basis: 30%;
+        }
+
+        &--style {
+            color: var(--purple);
+            background-color: var(--yellow-green);
+            font-family: "BenchNine-Regular";
+            @include on-dark-mode {
+            background-color: var(--purple);
+            color: var(--yellow-green);
+            }
+        }
+    }
+
+    &__text {    
+        margin: 0;
+        padding: 2%;
+        font-size: 2rem;
+        display: none;
+        flex-basis: 100%;
+        box-sizing: border-box;
+
+        &--style {
+            color: var(--yellow);
+            background-color: var(--green-blue);
+            font-family: "BenchNine-Regular";
+            @include on-dark-mode {
+                background-color: var(--dark);
+                color: var(--orange);
+                }
+        }
+
+        @include respond-small {
+            display: block;
+        }
+    }
+    &__container {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+        flex-flow: wrap;
+        align-items: stretch;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+}

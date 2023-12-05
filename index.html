@@ -1,154 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="auto" lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/@csstools/normalize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <title>CSS Responsive Web Design & Key Concepts</title>
 </head>
 
-<body>
-    <h1>Feline Flexbox with Cat Cards!</h1>
+<body class = "page">
+    <nav class = "navbar navbar--style">
+        <span class = "navbar__element">
+            <span class = navbar__element--burger><i class="fa fa-bars"></i></span>
+        <ul class = "navbar__list navbar__list--style">    
+            <li class = "navbar__item"><a class = "navbar__anchor navbar__anchor--style" href="#dopey">Dopey</a></li>
+            <li class = "navbar__item"><a class = "navbar__anchor navbar__anchor--style" href="#blobby">Blobby</a></li>
+            <li class = "navbar__item"><a class = "navbar__anchor navbar__anchor--style" href="#nibbles">Nibbles</a></li>
+            <li class = "navbar__item"><a class = "navbar__anchor navbar__anchor--style" href="#doughnut">Doughnut</a></li>   
+        </ul>
+    </span>
+    </nav>
+    <section class = "page__intro">
+        <h1 class = "page__heading page__heading--style">Feline Flexbox with Cat Cards!</h1>
+        <h2 class = "page__sub-heading page__sub-heading--style">A purrfect example of the power of flexbox</h2>
+        <p class = "page__text page__text--style">The cat, commonly referred to as the domestic cat or house cat, is the only domesticated species in the family Felidae. Recent advances in archaeology and genetics have shown that the domestication of the cat occurred in the Near East around 7500 BC. The Cat Api provides access to tens of thousands of cats so you can delight yourself with the ever changing cat images and facts on this page.</p>
+    </section>
 
-    <h2>A purrfect example of the power of flexbox 😻</h2>
-
-    <p>Cat ipsum dolor sit amet, always hungry, for meow yet paw at your belly. Scratch the furniture sleep on dog bed, force dog to sleep on floor. Have secret plans sleeps on my head do doodoo in the litter-box, clickityclack on the piano, be frumpygrumpy. Play with twist ties. Eat half my food and ask for more. Show belly play with twist ties. The dog smells bad.</p>
-
-    <div class="card-container">
-
+    <section class="page__container">
         <div class="card">
-            <h3 class="cat-name"></h3>
-            <img src="" alt="" class="pet-pic">
-            <p class="species"> </p>
-            <p class="fav-foods"> </p>
-            <p class="birth-year"> </p>
+            <h3 class="card__cat-name"></h3>
+            <img src="" alt="" class="card__image">
+            <p class="card__species"> </p>
+            <p class="card__origin"> </p>
+            <p class="card__temperament"> </p>
         </div>
 
         <div class="card">
-            <h3 class="cat-name"></h3>
-            <img src="" alt="" class="pet-pic">
-            <p class="species"> </p>
-            <p class="fav-foods"> </p>
-            <p class="birth-year"> </p>
+            <h3 class="card__cat-name"></h3>
+            <img src="" alt="" class="card__image">
+            <p class="card__species"> </p>
+            <p class="card__origin"> </p>
+            <p class="card__temperament"> </p>
         </div>
 
         <div class="card">
-            <h3 class="cat-name"></h3>
-            <img src="" alt="" class="pet-pic">
-            <p class="species"> </p>
-            <p class="fav-foods"> </p>
-            <p class="birth-year"> </p>
+            <h3 class="card__cat-name"></h3>
+            <img src="" alt="" class="card__image">
+            <p class="card__species"> </p>
+            <p class="card__origin"> </p>
+            <p class="card__temperament"> </p>
         </div>
 
         <div class="card">
-            <h3 class="cat-name"></h3>
-            <img src="" alt="" class="pet-pic">
-            <p class="species"> </p>
-            <p class="fav-foods"> </p>
-            <p class="birth-year"> </p>
+            <h3 class="card__cat-name"></h3>
+            <img src="" alt="" class="card__image">
+            <p class="card__species"> </p>
+            <p class="card__origin"> </p>
+            <p class="card__temperament"> </p>
         </div>
 
         <div class="card">
-            <h3 class="cat-name"></h3>
-            <img src="" alt="" class="pet-pic">
-            <p class="species"> </p>
-            <p class="fav-foods"> </p>
-            <p class="birth-year"> </p>
+            <h3 class="card__cat-name"></h3>
+            <img src="" alt="" class="card__image">
+            <p class="card__species"> </p>
+            <p class="card__origin"> </p>
+            <p class="card__temperament"> </p>
         </div>
 
         <div class="card">
-            <h3 class="cat-name"></h3>
-            <img src="" alt="" class="pet-pic">
-            <p class="species"> </p>
-            <p class="fav-foods"> </p>
-            <p class="birth-year"> </p>
+            <h3 class="card__cat-name"></h3>
+            <img src="" alt="" class="card__image">
+            <p class="card__species"> </p>
+            <p class="card__origin"> </p>
+            <p class="card__temperament"> </p>
         </div>
 
         <div class="card">
-            <h3 class="cat-name"></h3>
-            <img src="" alt="" class="pet-pic">
-            <p class="species"> </p>
-            <p class="fav-foods"> </p>
-            <p class="birth-year"> </p>
+            <h3 class="card__cat-name"></h3>
+            <img src="" alt="" class="card__image">
+            <p class="card__species"> </p>
+            <p class="card__origin"> </p>
+            <p class="card__temperament"> </p>
         </div>
 
         <div class="card">
-            <h3 class="cat-name"></h3>
-            <img src="" alt="" class="pet-pic">
-            <p class="species"> </p>
-            <p class="fav-foods"> </p>
-            <p class="birth-year"> </p>
+            <h3 class="card__cat-name"></h3>
+            <img src="" alt="" class="card__image">
+            <p class="card__species"> </p>
+            <p class="card__origin"> </p>
+            <p class="card__temperament"> </p>
         </div>
 
         <div class="card">
-            <h3 class="cat-name"></h3>
-            <img src="" alt="" class="pet-pic">
-            <p class="species"> </p>
-            <p class="fav-foods"> </p>
-            <p class="birth-year"> </p>
+            <h3 class="card__cat-name"></h3>
+            <img src="" alt="" class="card__image">
+            <p class="card__species"> </p>
+            <p class="card__origin"> </p>
+            <p class="card__temperament"> </p>
         </div>
 
         <div class="card">
-            <h3 class="cat-name"></h3>
-            <img src="" alt="" class="pet-pic">
-            <p class="species"> </p>
-            <p class="fav-foods"> </p>
-            <p class="birth-year"> </p>
+            <h3 class="card__cat-name"></h3>
+            <img src="" alt="" class="card__image">
+            <p class="card__species"> </p>
+            <p class="card__origin"> </p>
+            <p class="card__temperament"> </p>
         </div>
 
         <div class="card">
-            <h3 class="cat-name"></h3>
-            <img src="" alt="" class="pet-pic">
-            <p class="species"> </p>
-            <p class="fav-foods"> </p>
-            <p class="birth-year"> </p>
+            <h3 class="card__cat-name"></h3>
+            <img src="" alt="" class="card__image">
+            <p class="card__species"> </p>
+            <p class="card__origin"> </p>
+            <p class="card__temperament"> </p>
         </div>
 
         <div class="card">
-            <h3 class="cat-name"></h3>
-            <img src="" alt="" class="pet-pic">
-            <p class="species"> </p>
-            <p class="fav-foods"> </p>
-            <p class="birth-year"> </p>
+            <h3 class="card__cat-name"></h3>
+            <img src="" alt="" class="card__image">
+            <p class="card__species"> </p>
+            <p class="card__origin"> </p>
+            <p class="card__temperament"> </p>
         </div>
 
         <div class="card">
-            <h3 class="cat-name"></h3>
-            <img src="" alt="" class="pet-pic">
-            <p class="species"> </p>
-            <p class="fav-foods"> </p>
-            <p class="birth-year"> </p>
+            <h3 class="card__cat-name"></h3>
+            <img src="" alt="" class="card__image">
+            <p class="card__species"> </p>
+            <p class="card__origin"> </p>
+            <p class="card__temperament"> </p>
         </div>
 
         <div class="card">
-            <h3 class="cat-name"></h3>
-            <img src="" alt="" class="pet-pic">
-            <p class="species"> </p>
-            <p class="fav-foods"> </p>
-            <p class="birth-year"> </p>
+            <h3 class="card__cat-name"></h3>
+            <img src="" alt="" class="card__image">
+            <p class="card__species"> </p>
+            <p class="card__origin"> </p>
+            <p class="card__temperament"> </p>
         </div>
 
         <div class="card">
-            <h3 class="cat-name"></h3>
-            <img src="" alt="" class="pet-pic">
-            <p class="species"> </p>
-            <p class="fav-foods"> </p>
-            <p class="birth-year"> </p>
+            <h3 class="card__cat-name"></h3>
+            <img src="" alt="" class="card__image">
+            <p class="card__species"> </p>
+            <p class="card__origin"> </p>
+            <p class="card__temperament"> </p>
         </div>
 
         <div class="card">
-            <h3 class="cat-name"></h3>
-            <img src="" alt="" class="pet-pic">
-            <p class="species"> </p>
-            <p class="fav-foods"> </p>
-            <p class="birth-year"> </p>
+            <h3 class="card__cat-name"></h3>
+            <img src="" alt="" class="card__image">
+            <p class="card__species"> </p>
+            <p class="card__origin"> </p>
+            <p class="card__temperament"> </p>
         </div>
-
-
-
-    </div>
+    </section>
 
     <script src="script.js"></script>
 

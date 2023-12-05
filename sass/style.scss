@@ -1,0 +1,97 @@
+:root {
+    --light: #E7ECEF;
+    --dark: #272932;
+    --purple: #8601AF;
+    --red-purple: #C21460;
+    --blue: #0247FE;
+    --green-blue: #347C98;
+    --red-orange: #FC600A;
+    --orange: #FB9902;
+    --yellow-orange: #FCCC1A;
+    --yellow: #FEFE33;
+    --yellow-green: #B2D732;
+}
+
+/* Font: BenchNine[Font].
+"https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&display=swap";
+Accessed 23/10/23 */
+@font-face {
+  font-family: "BenchNine-Bold";
+  src: url("../fonts/BenchNine-Bold.ttf");
+}
+@font-face {
+  font-family: "BenchNine-Regular";
+  src: url("../fonts/BenchNine-Regular.ttf");
+}
+
+    $colour-wheel: (
+    "red" :#FE2712,
+    "red-orange": #FC600A,
+    "orange": #FB9902,
+    "yellow-orange": #FCCC1A,
+    "yellow": #FEFE33,
+    "yellow-green": #B2D732,
+    "green": #66B032,
+	  "green-blue": #347C98,
+  	"blue": #0247FE,
+    "blue-purple":#4424D6,
+    "purple": #8601AF,
+    "red-purple": #C21460
+    );
+
+  @each $name, $hex in $colour-wheel {
+      .card--#{$name} {
+        background: $hex;
+    }
+  }
+
+  @mixin on-dark-mode {
+    @media (prefers-color-scheme: dark) {
+      html[data-theme="auto"] & {
+        @content;
+      }
+    }
+    html[data-theme="dark"] & {
+      @content;
+    }
+  }
+
+  @mixin respond-small {
+    @media (min-width: 600px) { @content };
+  }
+
+  @mixin respond-medium {
+    @media (min-width: 768px) { @content };
+  }
+
+  @mixin respond-large {
+    @media (min-width: 992px) { @content };
+  }
+
+  @mixin respond-x-large {
+    @media (min-width: 1200px) { @content };
+  }
+
+  @mixin teal-shadow {
+    border: 1px solid var(--coral);
+    box-shadow: 3px 3px 5px var(--dark), 7px 7px 5px var(--teal), 11px 11px 5px var(--coral);
+    border-radius: 5%;
+  }
+
+  %card-info {
+    margin: 1%;
+    padding: 1%;
+    font-family: "BenchNine-Bold";
+    text-align: center;
+    text-wrap:wrap;
+  }
+
+  %card-heading {
+    @extend %card-info;
+    font-size: 2.5rem;
+  }
+
+  %card-text {
+    @extend %card-info;
+    font-size: 1.6rem;
+  }

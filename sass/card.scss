@@ -1,0 +1,52 @@
+.card {
+    padding: 2%;
+    margin: 0;
+    flex-grow: 1;
+    flex-basis: 100%;
+    position: sticky;
+
+    &--color:nth-child(1),
+    &--color:nth-child(8), &--color:nth-child(9), &--color:nth-child(10),
+    &--color:nth-child(11),&--color:nth-child(12),&--color:nth-child(13) {
+        color: var(--light);
+    }
+
+    @include respond-small {
+        flex-basis: calc(100 / 2 ) * 1%;
+    }
+
+    @include respond-medium {
+        flex-basis: calc(100 / 3 ) * 1%;
+    }
+
+    @include respond-large{
+        flex-basis: calc(100 / 4 ) * 1%;
+    }
+
+    @include respond-x-large{
+        flex-basis: calc(100 / 5 ) * 1%;
+    }
+
+    &__image {
+       width: 90%;
+       margin: 3% 5%;
+       padding: 0;
+       max-height: 100%;
+    @include teal-shadow;
+    }
+
+    &__cat-name {   
+        @extend %card-heading;
+    }
+    &__species {   
+        @extend %card-text;
+    }
+    &__origin {   
+        @extend %card-text;
+    }
+    &__temperament {   
+        @extend %card-text;
+    }
+}
+
+
