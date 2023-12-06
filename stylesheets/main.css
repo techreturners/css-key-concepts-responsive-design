@@ -298,7 +298,7 @@ html[data-theme=dark] .navbar__anchor--style:hover {
   }
 }
 .navbar__element--burger {
-  color: var(--green-blue);
+  color: var(--red-purple);
   margin-left: 2%;
 }
 @media (prefers-color-scheme: dark) {
