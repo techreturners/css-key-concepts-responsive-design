@@ -114,7 +114,6 @@ const showCats = async (catApi) => {
     const persona = document.getElementsByClassName("card__temperament");
     const country = document.getElementsByClassName("card__origin");
     const myCats = await fetchData(catApi);
-    console.log(myCats);
     for (let i = 0; i < myCats.length; i++) {
         const {url, breeds} = myCats[i];
         petImage[i].src = url;  
