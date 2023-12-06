@@ -17,7 +17,7 @@
     &__heading {   
         margin: 0;
         padding: 2%;
-        font-size: 8rem;
+        font-size: 4rem;
         text-align: left;
         flex-basis: 100%;
         box-sizing: border-box;
@@ -25,6 +25,7 @@
         @include respond-medium {
             text-align: center;
             flex-basis: 70%;
+            font-size: 8rem;
         }
         
         &--style {
@@ -41,7 +42,7 @@
     &__sub-heading { 
         margin: 0;
         padding: 3%;
-        font-size: 4rem;
+        font-size: 3rem;
         text-align: left;
         flex-basis: 100%;
         box-sizing: border-box;
@@ -49,6 +50,7 @@
         @include respond-medium {
             text-align: center;
             flex-basis: 30%;
+            font-size: 4rem;
         }
 
         &--style {
