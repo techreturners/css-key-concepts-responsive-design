@@ -4,10 +4,13 @@
     flex-grow: 1;
     flex-basis: 100%;
     position: sticky;
-    color: var(--dark);
-    @include on-dark-mode {
-        color: var(--light); 
-      }
+
+    &--color {
+        color: var(--dark);
+        @include on-dark-mode {
+            color: var(--light); 
+        }
+    }
 
     &--color:nth-child(1),
     &--color:nth-child(8), &--color:nth-child(9), &--color:nth-child(10),

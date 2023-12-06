@@ -439,14 +439,16 @@ html[data-theme=dark] .page__text--style {
   flex-grow: 1;
   flex-basis: 100%;
   position: sticky;
+}
+.card--color {
   color: var(--dark);
 }
 @media (prefers-color-scheme: dark) {
-  html[data-theme=auto] .card {
+  html[data-theme=auto] .card--color {
     color: var(--light);
   }
 }
-html[data-theme=dark] .card {
+html[data-theme=dark] .card--color {
   color: var(--light);
 }
 .card--color:nth-child(1), .card--color:nth-child(8), .card--color:nth-child(9), .card--color:nth-child(10), .card--color:nth-child(11), .card--color:nth-child(12), .card--color:nth-child(13) {
