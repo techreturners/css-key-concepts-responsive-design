@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 :root {
     --light: #E7ECEF;
     --dark: #272932;
@@ -39,22 +41,27 @@ Accessed 23/10/23 */
     "red-purple": #C21460
     );
 
-  @each $name, $hex in $colour-wheel {
-      .card--#{$name} {
-        background: $hex;
-    }
-  }
-
-  @mixin on-dark-mode {
-    @media (prefers-color-scheme: dark) {
-      html[data-theme="auto"] & {
+    @mixin on-dark-mode {
+      @media (prefers-color-scheme: dark) {
+        html[data-theme="auto"] & {
+          @content;
+        }
+      }
+      html[data-theme="dark"] & {
         @content;
       }
     }
-    html[data-theme="dark"] & {
-      @content;
+
+    @each $name, $hex in $colour-wheel {
+        .card--#{$name} {
+          background-color: $hex;
+
+          @include on-dark-mode {
+            background-color: color.change($hex, $blackness: 46%); 
+          }
+      }
     }
-  }
+
 
   @mixin respond-small {
     @media (min-width: 600px) { @content };
