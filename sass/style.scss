@@ -72,9 +72,9 @@ Accessed 23/10/23 */
     @media (min-width: 1200px) { @content };
   }
 
-  @mixin teal-shadow {
+  @mixin green-shadow {
     border: 1px solid var(--coral);
-    box-shadow: 3px 3px 5px var(--dark), 7px 7px 5px var(--teal), 11px 11px 5px var(--coral);
+    box-shadow: 3px 3px 5px var(--dark), 7px 7px 5px var(--green-blue), 3px 3px 2px var(--yellow-green);
     border-radius: 5%;
   }
 

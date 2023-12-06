@@ -373,7 +373,7 @@ html[data-theme=dark] .page__text--style {
   padding: 0;
   max-height: 100%;
   border: 1px solid var(--coral);
-  box-shadow: 3px 3px 5px var(--dark), 7px 7px 5px var(--teal), 11px 11px 5px var(--coral);
+  box-shadow: 3px 3px 5px var(--dark), 7px 7px 5px var(--green-blue), 3px 3px 2px var(--yellow-green);
   border-radius: 5%;
 }
 
